@@ -26,7 +26,21 @@ async function getAllTrips(userId) {
   }
 }
 
+async function getTripById(tripId, userId) {
+  try {
+    const trip = await TravelMateTrip.findOne({
+      _id: tripId,
+      user: userId,
+    });
+
+    return trip;
+  } catch (error) {
+    throw error;
+  }
+}
+
 module.exports = {
   saveTrip,
   getAllTrips,
+  getTripById
 };

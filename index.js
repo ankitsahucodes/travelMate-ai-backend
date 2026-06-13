@@ -29,11 +29,16 @@ app.use("/auth", authRoutes);
 
 // ai routes
 const tripsRoutes = require("./routes/ai.routes.js");
-app.use("/trips", tripsRoutes);
+app.use("/trips", verifyUser, tripsRoutes);
 
 // trip management routes
 const tripRoutes = require("./routes/trip.routes.js");
 app.use("/trips", verifyUser, tripRoutes);
+
+// featuredRoutes
+
+const featuredRoutes = require("./routes/featured.routes.js")
+app.use("/featured", featuredRoutes)
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

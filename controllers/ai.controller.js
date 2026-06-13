@@ -22,7 +22,8 @@ Rules:
 10. If information is unavailable, use an empty string or empty array instead of inventing data.
 11. ImageUrl is available not 404 or not available. imageUrl should be destination place image sourced from free image hosting services like Unsplash or similar websites, not Wikipedia, and it should be live not dead links.
 12. The JSON response must be parseable with JSON.parse() without modification.
-14. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items   
+14. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items.
+15. Estimated cost will be in INR.
 
 Generate a complete travel plan based on destination, duration, person count, and budget.
 `;
@@ -55,8 +56,6 @@ Return JSON in the following exact structure:
 
   "currency": "",
   "budget_inr": 0,
-  "budget_local": 0,
-  "estimated_total_cost": 0,
 
   "best_time_to_visit": {
     "season": "",

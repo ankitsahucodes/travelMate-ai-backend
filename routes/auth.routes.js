@@ -3,6 +3,7 @@ const router = express.Router();
 const axios = require("axios");
 const jwt = require("jsonwebtoken");
 const TravelMateUser = require("../models/user.model.js");
+const TravelMateTrip= require("../models/trip.model.js")
 
 router.get("/google", (req, res) => {
   const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${process.env.BACKEND_URL}/auth/google/callback&response_type=code&scope=profile email`;
@@ -88,8 +89,12 @@ const { verifyUser } = require("../middleware/auth.middleware");
 router.get("/me", verifyUser, async (req, res) => {
   try {
     const user = await TravelMateUser.findById(req.user.userId).select(
-      "name email",
+      "name email profilePicture",
     );
+
+    const savedTrips = await TravelMateTrip.countDocuments({
+      user: req.user.userId,
+    });
 
     if (!user) {
       return res.status(404).json({ error: "User not found" });
@@ -98,6 +103,7 @@ router.get("/me", verifyUser, async (req, res) => {
     res.json({
       success: true,
       user,
+      savedTrips
     });
   } catch (error) {
     res.status(500).json({

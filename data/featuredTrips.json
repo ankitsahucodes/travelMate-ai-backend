@@ -1,0 +1,564 @@
+[
+  {
+    "id": 1,
+    "destination": "Tokyo",
+    "country": "Japan",
+    "duration_days": 5,
+    "person_count": 2,
+    "currency": "JPY",
+    "budget_inr": 300000,
+    "best_time_to_visit": {
+      "season": "Spring (March to May)",
+      "reason": "Ideal weather and beautiful cherry blossom (Sakura) views."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000&auto=format&fit=crop",
+    "top_attractions": ["Senso-ji Temple", "Shibuya Crossing", "Tokyo Skytree"],
+    "travel_tips": [
+      "Purchase a Suica or Pasmo card for seamless train and bus travel.",
+      "Carry cash as many smaller local eateries still prefer it over cards.",
+      "Learn basic Japanese phrases like 'Arigato' (Thank you) to be polite.",
+      "Download Google Maps for highly accurate public transit routes."
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Tradition and Old Tokyo",
+        "estimated_day_cost": 25000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Visit Senso-ji Temple",
+            "location": "Asakusa",
+            "description": "Explore Tokyo's oldest and most significant Buddhist temple.",
+            "estimated_cost": 0
+          },
+          {
+            "time": "afternoon",
+            "activity": "Nakamise Street Shopping & Lunch",
+            "location": "Asakusa",
+            "description": "Try local street foods like Taiyaki and shop for traditional souvenirs.",
+            "estimated_cost": 5000
+          },
+          {
+            "time": "evening",
+            "activity": "Sumida River Cruise",
+            "location": "Asakusa River",
+            "description": "Enjoy a relaxing boat ride along the river with city views.",
+            "estimated_cost": 4000
+          },
+          {
+            "time": "evening",
+            "activity": "Dinner in Asakusa",
+            "location": "Asakusa",
+            "description": "Authentic Tempura or Unagi dinner.",
+            "estimated_cost": 16000
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Modern Marvels and City Lights",
+        "estimated_day_cost": 35000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Ueno Park and Museums",
+            "location": "Ueno",
+            "description": "Walk through the park and visit the Tokyo National Museum.",
+            "estimated_cost": 4000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Akihabara Electric Town",
+            "location": "Akihabara",
+            "description": "Explore anime, manga, and electronics culture.",
+            "estimated_cost": 10000
+          },
+          {
+            "time": "evening",
+            "activity": "Tokyo Skytree Observation Deck",
+            "location": "Sumida",
+            "description": "Get a panoramic view of the Tokyo skyline at sunset.",
+            "estimated_cost": 12000
+          },
+          {
+            "time": "evening",
+            "activity": "Ramen Dinner",
+            "location": "Skytree area",
+            "description": "Enjoy a warm bowl of authentic Tokyo-style ramen.",
+            "estimated_cost": 9000
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Pop Culture and Fashion",
+        "estimated_day_cost": 30000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Meiji Jingu Shrine",
+            "location": "Shibuya/Harajuku",
+            "description": "Visit the serene Shinto shrine located in a massive forest.",
+            "estimated_cost": 0
+          },
+          {
+            "time": "afternoon",
+            "activity": "Takeshita Street Exploration",
+            "location": "Harajuku",
+            "description": "Experience quirky fashion and colorful street food like crepes.",
+            "estimated_cost": 8000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Omotesando Walking",
+            "location": "Harajuku",
+            "description": "Luxury shopping and beautiful architecture walk.",
+            "estimated_cost": 0
+          },
+          {
+            "time": "evening",
+            "activity": "Shibuya Crossing & Dinner",
+            "location": "Shibuya",
+            "description": "Witness the famous scramble crossing and enjoy conveyor belt sushi.",
+            "estimated_cost": 22000
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Fish Markets and Luxury Shopping",
+        "estimated_day_cost": 45000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Tsukiji Outer Market",
+            "location": "Tsukiji",
+            "description": "Fresh seafood breakfast and exploring local food stalls.",
+            "estimated_cost": 12000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Ginza District Exploration",
+            "location": "Ginza",
+            "description": "High-end shopping and stunning department stores.",
+            "estimated_cost": 15000
+          },
+          {
+            "time": "evening",
+            "activity": "TeamLab Borderless/Planets",
+            "location": "Toyosu/Azabudai",
+            "description": "Immersive digital art museum experience.",
+            "estimated_cost": 10000
+          },
+          {
+            "time": "evening",
+            "activity": "Fine Dining Experience",
+            "location": "Ginza",
+            "description": "A high-quality multi-course dinner.",
+            "estimated_cost": 8000
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Nature and Departure",
+        "estimated_day_cost": 20000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Shinjuku Gyoen National Garden",
+            "location": "Shinjuku",
+            "description": "A peaceful stroll through beautiful Japanese gardens.",
+            "estimated_cost": 2000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Shinjuku Souvenir Shopping",
+            "location": "Shinjuku",
+            "description": "Last minute shopping at Don Quijote or department stores.",
+            "estimated_cost": 10000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Farewell Lunch",
+            "location": "Shinjuku",
+            "description": "Try local Tonkatsu or Yakitori.",
+            "estimated_cost": 5000
+          },
+          {
+            "time": "evening",
+            "activity": "Airport Transfer",
+            "location": "Shinjuku to Narita/Haneda",
+            "description": "Travel to the airport via Narita Express or Limousine Bus.",
+            "estimated_cost": 3000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "destination": "Paris",
+    "country": "France",
+    "duration_days": 3,
+    "person_count": 2,
+    "currency": "EUR",
+    "budget_inr": 300000,
+    "best_time_to_visit": {
+      "season": "Spring (April to June)",
+      "reason": "Pleasant weather and blooming gardens make it ideal for walking tours."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop",
+    "top_attractions": [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame Cathedral"
+    ],
+    "travel_tips": [
+      "Buy a Paris Visite pass for easy Metro and bus travel.",
+      "Book museum tickets online in advance to avoid long queues.",
+      "Learn basic French greetings like 'Bonjour' and 'Merci' to be more polite.",
+      "Beware of pickpockets in high-tourist areas like Montmartre."
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Iconic Landmarks and Seine Views",
+        "estimated_day_cost": 45000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Eiffel Tower Visit",
+            "location": "Champ de Mars",
+            "description": "Ascend the Eiffel Tower for breathtaking views of the city skyline.",
+            "estimated_cost": 12000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Lunch at a Parisian Bistro",
+            "location": "Near Trocadéro",
+            "description": "Enjoy traditional French cuisine like Croque Monsieur or Quiche.",
+            "estimated_cost": 8000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Arc de Triomphe and Champs-Élysées",
+            "location": "Champs-Élysées",
+            "description": "Walk down the famous avenue and visit the historic monument.",
+            "estimated_cost": 5000
+          },
+          {
+            "time": "evening",
+            "activity": "Seine River Cruise",
+            "location": "Pont Neuf",
+            "description": "A relaxing boat ride to see the city lights and monuments.",
+            "estimated_cost": 6000
+          },
+          {
+            "time": "evening",
+            "activity": "Dinner in Saint-Germain-des-Prés",
+            "location": "Saint-Germain",
+            "description": "Fine dining experience in a classic literary district.",
+            "estimated_cost": 14000
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Art and Culture Immersion",
+        "estimated_day_cost": 55000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Louvre Museum Tour",
+            "location": "Rue de Rivoli",
+            "description": "Explore world-famous artworks including the Mona Lisa.",
+            "estimated_cost": 15000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Tuileries Garden Walk",
+            "location": "Tuileries",
+            "description": "Relax in the beautiful gardens located right next to the Louvre.",
+            "estimated_cost": 3000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Lunch at a Local Patisserie",
+            "location": "Louvre Area",
+            "description": "Sample fresh croissants, macarons, and savory pastries.",
+            "estimated_cost": 7000
+          },
+          {
+            "time": "evening",
+            "activity": "Montmartre Exploration",
+            "location": "Sacre Coeur",
+            "description": "Visit the Basilica and enjoy the bohemian vibe of artists' square.",
+            "estimated_cost": 10000
+          },
+          {
+            "time": "evening",
+            "activity": "Dinner in Montmartre",
+            "location": "Place du Tertre",
+            "description": "Enjoy dinner overlooking the cobblestone streets of Montmartre.",
+            "estimated_cost": 20000
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "History and Leisure",
+        "estimated_day_cost": 50000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Notre-Dame Cathedral and Île de la Cité",
+            "location": "Île de la Cité",
+            "description": "Admire the Gothic architecture of the famous cathedral.",
+            "estimated_cost": 5000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Sainte-Chapelle Visit",
+            "location": "Île de la Cité",
+            "description": "Witness the stunning stained glass windows of this royal chapel.",
+            "estimated_cost": 8000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Le Marais Shopping and Wandering",
+            "location": "Le Marais",
+            "description": "Walk through the historic Jewish quarter and boutique shops.",
+            "estimated_cost": 15000
+          },
+          {
+            "time": "evening",
+            "activity": "Farewell French Dinner",
+            "location": "Le Marais",
+            "description": "A high-end gastronomic experience to end the trip.",
+            "estimated_cost": 22000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "destination": "Darjeeling",
+    "country": "India",
+    "duration_days": 3,
+    "person_count": 2,
+    "currency": "INR",
+    "budget_inr": 50000,
+    "best_time_to_visit": {
+      "season": "March to May or October to December",
+      "reason": "Pleasant weather and clear views of the Kanchenjunga range."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1581791534721-e599df4417f7?q=80&w=1000&auto=format&fit=crop",
+    "top_attractions": [
+      "Tiger Hill",
+      "Darjeeling Himalayan Railway",
+      "Batasia Loop"
+    ],
+    "travel_tips": [
+      "Carry warm clothing even in summer as evenings can get chilly.",
+      "Book the Toy Train ride in advance to avoid disappointment.",
+      "Walking is the best way to explore the local markets and tea gardens.",
+      "Carry some cash as small shops may have limited digital payment connectivity."
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Arrival and Local Charm",
+        "estimated_day_cost": 6500,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Arrival and Check-in",
+            "location": "Darjeeling Town",
+            "description": "Arrive in Darjeeling, check into your hotel, and freshen up.",
+            "estimated_cost": 3500
+          },
+          {
+            "time": "afternoon",
+            "activity": "Himalayan Mountaineering Institute & Zoo",
+            "location": "வன (Vana) area",
+            "description": "Visit the zoo to see Red Pandas and the mountaineering museum.",
+            "estimated_cost": 1000
+          },
+          {
+            "time": "evening",
+            "activity": "Chowrasta Walk & Local Food",
+            "location": "Mall Road",
+            "description": "Stroll through the Mall Road and try local momos and thukpa.",
+            "estimated_cost": 2000
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Sunrise and Heritage Rail",
+        "estimated_day_cost": 7500,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Tiger Hill Sunrise",
+            "location": "Tiger Hill",
+            "description": "Witness the breathtaking sunrise over Mt. Kanchenjunga.",
+            "estimated_cost": 2500
+          },
+          {
+            "time": "afternoon",
+            "activity": "Toy Train Ride & Batasia Loop",
+            "location": "Darjeeling Himalayan Railway",
+            "description": "A scenic heritage steam train ride through the loops and curves.",
+            "estimated_cost": 3000
+          },
+          {
+            "time": "evening",
+            "activity": "Tea Garden Tour",
+            "location": "Happy Valley Tea Estate",
+            "description": "Learn about tea processing and enjoy a fresh cup in the garden.",
+            "estimated_cost": 2000
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Monasteries and Departure",
+        "estimated_day_cost": 5000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Peace Pagoda & Japanese Temple",
+            "location": "Darjeeling Heights",
+            "description": "Visit the peaceful pagoda for spiritual tranquility and views.",
+            "estimated_cost": 1000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Shopping at Tibetan Market",
+            "location": "Main Market",
+            "description": "Buy authentic souvenirs, handicrafts, and local tea.",
+            "estimated_cost": 3000
+          },
+          {
+            "time": "evening",
+            "activity": "Departure",
+            "location": "Darjeeling Station/Airport",
+            "description": "Head towards your next destination.",
+            "estimated_cost": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "destination": "Dubai",
+    "country": "United Arab Emirates",
+    "duration_days": 3,
+    "person_count": 2,
+    "currency": "AED",
+    "budget_inr": 200000,
+    "best_time_to_visit": {
+      "season": "November to March",
+      "reason": "The weather is pleasant and cool, making outdoor activities and desert safaris much more comfortable."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1000&auto=format&fit=crop",
+    "top_attractions": ["Burj Khalifa", "Dubai Mall", "Palm Jumeirah"],
+    "travel_tips": [
+      "Use the Dubai Metro for affordable and efficient travel across the city.",
+      "Always carry a light jacket as indoor malls and cinemas have strong air conditioning.",
+      "Dress modestly when visiting religious sites or traditional local areas.",
+      "Download the Careem or Uber app for reliable taxi services."
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Modern Wonders and Skyscrapers",
+        "estimated_day_cost": 35000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Visit Burj Khalifa",
+            "location": "Downtown Dubai",
+            "description": "Go to the observation deck of the world's tallest building for breathtaking views.",
+            "estimated_cost": 12000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Dubai Mall Shopping & Lunch",
+            "location": "Downtown Dubai",
+            "description": "Explore the massive mall and enjoy lunch at a waterfront restaurant.",
+            "estimated_cost": 8000
+          },
+          {
+            "time": "evening",
+            "activity": "Dubai Fountain Show & Dinner",
+            "location": "Burj Lake",
+            "description": "Watch the spectacular choreographed fountain show followed by dinner.",
+            "estimated_cost": 15000
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Desert Adventures and Culture",
+        "estimated_day_cost": 45000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Old Dubai & Gold Souk Tour",
+            "location": "Deira/Bur Dubai",
+            "description": "Explore traditional markets and take an Abra ride across the Creek.",
+            "estimated_cost": 5000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Desert Safari",
+            "location": "Dubai Desert Conservation Reserve",
+            "description": "Dune bashing, camel riding, and sandboarding in the golden dunes.",
+            "estimated_cost": 15000
+          },
+          {
+            "time": "evening",
+            "activity": "Bedouin Style Dinner",
+            "location": "Desert Camp",
+            "description": "Enjoy a traditional BBQ dinner with live belly dancing and Tanoura shows under the stars.",
+            "estimated_cost": 25000
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Islands and Luxury Vibes",
+        "estimated_day_cost": 55000,
+        "activities": [
+          {
+            "time": "morning",
+            "activity": "Palm Jumeirah Exploration",
+            "location": "Palm Jumeirah",
+            "description": "Visit the iconic man-made island and enjoy the views from the Monorail.",
+            "estimated_cost": 10000
+          },
+          {
+            "time": "afternoon",
+            "activity": "Aquaventure Waterpark or Beach Club",
+            "location": "Atlantis, The Palm",
+            "description": "Experience world-class water slides or relax at a luxury beach club.",
+            "estimated_cost": 25000
+          },
+          {
+            "time": "evening",
+            "activity": "Marina Walk & Farewell Dinner",
+            "location": "Dubai Marina",
+            "description": "A relaxing stroll along the Marina with a high-end dinner overlooking the yachts.",
+            "estimated_cost": 20000
+          }
+        ]
+      }
+    ]
+  }
+]

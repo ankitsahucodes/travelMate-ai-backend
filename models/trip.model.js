@@ -17,8 +17,6 @@ const tripSchema = new mongoose.Schema(
     currency: String,
 
     budget_inr: Number,
-    budget_local: Number,
-    estimated_total_cost: Number,
 
     best_time_to_visit: {
       season: String,
