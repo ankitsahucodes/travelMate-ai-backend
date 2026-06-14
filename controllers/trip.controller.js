@@ -39,8 +39,24 @@ async function getTripById(tripId, userId) {
   }
 }
 
+
+async function deleteTrip(tripId, userId) {
+  try {
+    const deletedTrip =
+      await TravelMateTrip.findOneAndDelete({
+        _id: tripId,
+        user: userId,
+      });
+
+    return deletedTrip;
+  } catch (error) {
+    throw error;
+  }
+}
+
 module.exports = {
   saveTrip,
   getAllTrips,
-  getTripById
+  getTripById,
+  deleteTrip
 };

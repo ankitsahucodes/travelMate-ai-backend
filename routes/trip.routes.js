@@ -5,6 +5,7 @@ const {
   saveTrip,
   getAllTrips,
   getTripById,
+  deleteTrip
 } = require("../controllers/trip.controller");
 
 router.post("/save", async (req, res) => {
@@ -48,6 +49,30 @@ router.get("/:id", async (req, res) => {
   } catch (error) {
     res.status(500).json({
       error: "Failed to fetch trip",
+    });
+  }
+});
+
+router.delete("/:tripId", verifyUser, async (req, res) => {
+  try {
+    const deletedTrip = await deleteTrip(
+      req.params.tripId,
+      req.user.userId
+    );
+
+    if (!deletedTrip) {
+      return res.status(404).json({
+        message: "Trip not found",
+      });
+    }
+
+    res.status(200).json({
+      message: "Trip deleted successfully",
+      trip: deletedTrip,
+    });
+  } catch (error) {
+    res.status(500).json({
+      error: "Failed to delete trip",
     });
   }
 });
