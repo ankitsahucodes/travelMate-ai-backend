@@ -53,7 +53,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:tripId", verifyUser, async (req, res) => {
+router.delete("/:tripId", async (req, res) => {
   try {
     const deletedTrip = await deleteTrip(
       req.params.tripId,
