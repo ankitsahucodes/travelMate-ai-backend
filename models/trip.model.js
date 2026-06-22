@@ -23,7 +23,10 @@ const tripSchema = new mongoose.Schema(
       reason: String,
     },
 
-    imageUrl: String,
+    imageUrl: {
+  type: String,
+  default: "",
+},
 
     top_attractions: [String],
 

@@ -1,5 +1,27 @@
 const axios = require("axios");
 
+const DEFAULT_IMAGE =
+  "https://plus.unsplash.com/premium_photo-1661501359079-b362cda0d5d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+const getDestinationImage = async (destination) => {
+  try {
+    const response = await axios.get("https://api.pexels.com/v1/search", {
+      params: {
+        query: destination,
+        per_page: 1,
+      },
+      headers: {
+        Authorization: process.env.PEXELS_API_KEY,
+      },
+    });
+
+    return response.data?.photos?.[0]?.src?.large || DEFAULT_IMAGE;
+  } catch (error) {
+    console.log("Pexels Error:", error.message);
+    return DEFAULT_IMAGE;
+  }
+};
+
 const generateTrip = async (req, res) => {
   try {
     const { destination, days, persons, budget } = req.body;
@@ -20,18 +42,12 @@ Rules:
 8. Provide concise but useful descriptions.
 9. Return all fields requested by the user schema.
 10. If information is unavailable, use an empty string or empty array instead of inventing data.
-11. imageUrl is available not 404 or not available. imageUrl should be destination place image sourced from free image hosting services and it should be live not dead links.
-12. Do NOT invent or generate image URLs.
-13. If a verified image URL is not available, return an empty string "".
-14. Never guess Unsplash image IDs or photo URLs.
-15. imageUrl must be a publicly accessible direct image URL ending in .jpg, .jpeg, or .png.
-16. The JSON response must be parseable with JSON.parse() without modification.
-17. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items.
-18. Estimated cost will be in INR.
+11. The JSON response must be parseable with JSON.parse() without modification.
+12. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items.
+13. Estimated cost will be in INR.
 
 Generate a complete travel plan based on destination, duration, person count, and budget.
 `;
-
 
     const USER_PROMPT = `
 Create a detailed travel itinerary.
@@ -66,7 +82,6 @@ Return JSON in the following exact structure:
     "reason": ""
   },
 
-  "imageUrl": "image url from unsplash or similar free image hosting service showing the destination during the best season to visit not from wikipedia",
 
   "top_attractions": [
     "string", "string", "string"
@@ -120,9 +135,14 @@ Return JSON in the following exact structure:
 
     const content = response.data.choices[0].message.content;
 
-    console.log(content);
+    const trip = JSON.parse(content);
 
-    res.json(JSON.parse(content));
+    // Fetch image from Pexels
+    trip.imageUrl = await getDestinationImage(trip.destination || destination);
+
+    console.log(trip);
+
+    res.json(trip);
   } catch (error) {
     console.log("OpenRouter Error:", error.response?.data || error.message);
 
