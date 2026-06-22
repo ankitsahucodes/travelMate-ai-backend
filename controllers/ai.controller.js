@@ -20,10 +20,14 @@ Rules:
 8. Provide concise but useful descriptions.
 9. Return all fields requested by the user schema.
 10. If information is unavailable, use an empty string or empty array instead of inventing data.
-11. ImageUrl is available not 404 or not available. imageUrl should be destination place image sourced from free image hosting services like Unsplash or similar websites, not Wikipedia, and it should be live not dead links.
-12. The JSON response must be parseable with JSON.parse() without modification.
-14. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items.
-15. Estimated cost will be in INR.
+11. imageUrl is available not 404 or not available. imageUrl should be destination place image sourced from free image hosting services and it should be live not dead links.
+12. Do NOT invent or generate image URLs.
+13. If a verified image URL is not available, return an empty string "".
+14. Never guess Unsplash image IDs or photo URLs.
+15. imageUrl must be a publicly accessible direct image URL ending in .jpg, .jpeg, or .png.
+16. The JSON response must be parseable with JSON.parse() without modification.
+17. Top attractions must be only 3 and must be the most popular ones for the destination. Do not include less known attractions just to fill the list. the array has 3 items.
+18. Estimated cost will be in INR.
 
 Generate a complete travel plan based on destination, duration, person count, and budget.
 `;
